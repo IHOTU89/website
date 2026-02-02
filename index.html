@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website for animals</title>
+</head>
+<body>
+    <div  class="topnav">
+          <a  class="active" href="#home"></a>
+          <a  href="#about-us">about us</a>
+          <a  href="#gallary">gallary</a>
+          <a href="contact-us">contact us</a>
+    </div>
+    <section>
+      <img class="myslides" src="A-critically-endangered-eastern-bongo-has-been-born-at-Chester-Zoo.-It-is-the-first-to-be-born-at-the-zoo-in-11-years-9.jpg" style="height: 500px;">
+       <img class="myslides" src="c0636aef73cc0281b81ba371dc4c3580.jpg" style="height: 500px;">
+          <img    class="myslides" src="download (3).webp style="height: 500px;> 
+          <img class="myslides" src="download (4).webp style="height: 500px;>
+            <img class="myslides" src="download.webp"style="height": 500px;>
+              <img class="myslides" src="maxresdefault.jpg"    style="height: 500px;>
+                <img class="myslides" src="OIP (1).webp"    style="height: 500px;>
+                  <img class="myslides" src="OIP (2).webp"    style="height: 500px;>
+                    <img class="myslides" src="OIP (3).webp"    style="height: 500px;>
+                      <img class="myslides" src="OIP (4).webp"    style="height: 500px;>
+                        <img class="myslides" src="OIP (5).webp"    style="height: 500px;>
+                          <img class="myslides" src="OIP .jpg"    style="height: 500px;>
+                            <img class="myslides" src="Rare-animals-in-the-wild.jpg"    style="height: 500px;>
+                          <img class="myslides" src="th.webp"    style="height: 500px;>
+
+
+    </section>
+  <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("myslides");
+
+            for (i=0; i<x.length; i++){
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}
+            
+            x[myIndex-1].style.display = "block"
+            setTimeout(carousel, 3000);
+        }
+
+    </script>   
+
+    
+        
+</body>
+</html>
